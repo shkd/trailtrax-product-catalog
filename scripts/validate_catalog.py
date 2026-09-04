@@ -47,6 +47,8 @@ for index, item in enumerate(payload["products"], start=1):
         raise SystemExit(f"[{index}] status が不正です")
     if not str(item["sourceUrl"]).startswith("https://"):
         raise SystemExit(f"[{index}] sourceUrl は公式HTTPS URLが必要です")
+    if "imageUrl" in item and not str(item["imageUrl"]).startswith("https://"):
+        raise SystemExit(f"[{index}] imageUrl はHTTPS URLが必要です")
     for key in ["recommendedQuantity", "unitWeightGrams", "caloriesPerUnit"]:
         if not isinstance(item[key], (int, float)) or item[key] < 0:
             raise SystemExit(f"[{index}] {key} は0以上の数値が必要です")

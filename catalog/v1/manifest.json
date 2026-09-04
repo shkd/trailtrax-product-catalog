@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
-  "updatedAt": "2026-09-04T02:42:25Z",
+  "version": "1.2.0",
+  "updatedAt": "2026-09-04T06:39:24Z",
   "source": "catalog/v1/products.json",
-  "productCount": 3,
-  "checksumSha256": "125b3c600f483b68224902361a529da73854d7826fd5ad4e568de5ce911b13bb"
+  "productCount": 25,
+  "checksumSha256": "453a71ebe24b92f54b6e36733d36d6921fab4ba8c5aeda16ec4379ee7f10e396"
 }

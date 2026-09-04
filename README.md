@@ -17,6 +17,7 @@
 - `unit` は `piece / serving / pack / milliliter`
 - `status` は `active` または `discontinued`
 - 実在商品にはメーカー公式ページの `sourceUrl` を必須とします。
+- `imageUrl` は任意です。権利と継続利用を確認できる HTTPS 画像だけを指定します。
 - 推測値や未確認の商品は登録しません。
 - アプリは自動更新せず、利用者が更新操作を行ったときだけ端末キャッシュを置き換えます。
 
