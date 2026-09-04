@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trailtrax.jp/schema/product-catalog-v1.json",
+  "title": "Trailtrax Product Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "updatedAt", "products"],
+  "properties": {
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "products": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/product" }
+    }
+  },
+  "$defs": {
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "manufacturer", "brand", "name", "category", "unit",
+        "recommendedQuantity", "unitWeightGrams", "caloriesPerUnit",
+        "status", "sourceUrl"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "manufacturer": { "type": "string", "minLength": 1 },
+        "brand": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "enum": ["meal", "trailFood", "water", "electrolyte", "emergency", "other"] },
+        "unit": { "enum": ["piece", "serving", "pack", "milliliter"] },
+        "recommendedQuantity": { "type": "number", "exclusiveMinimum": 0 },
+        "unitWeightGrams": { "type": "number", "minimum": 0 },
+        "caloriesPerUnit": { "type": "number", "minimum": 0 },
+        "status": { "enum": ["active", "discontinued"] },
+        "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

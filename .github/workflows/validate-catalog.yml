@@ -1,0 +1,24 @@
+name: Validate Product Catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/v1/**'
+      - 'schema/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'catalog/v1/**'
+      - 'schema/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run catalog validation
+        run: |
+          env PYTHONUNBUFFERED=1 python scripts/validate_catalog.py
