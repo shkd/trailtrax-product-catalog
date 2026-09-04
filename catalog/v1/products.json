@@ -1,5 +1,48 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-09-04T00:00:00Z",
-  "products": []
+  "products": [
+    {
+      "id": "otsuka-caloriemate-block-chocolate-4",
+      "manufacturer": "大塚製薬株式会社",
+      "brand": "カロリーメイト",
+      "name": "カロリーメイト ブロック チョコレート味 4本入り",
+      "category": "trailFood",
+      "unit": "pack",
+      "recommendedQuantity": 1,
+      "unitWeightGrams": 80,
+      "caloriesPerUnit": 400,
+      "status": "active",
+      "sourceUrl": "https://www.otsuka.co.jp/nutraceutical/products/caloriemate/",
+      "notes": "1箱（4本・80g）あたり"
+    },
+    {
+      "id": "morinaga-inbar-protein-baked-chocolate",
+      "manufacturer": "森永製菓株式会社",
+      "brand": "inバープロテイン",
+      "name": "inバープロテイン ベイクドチョコ",
+      "category": "trailFood",
+      "unit": "piece",
+      "recommendedQuantity": 1,
+      "unitWeightGrams": 42,
+      "caloriesPerUnit": 199,
+      "status": "active",
+      "sourceUrl": "https://www.morinaga.co.jp/products/detail.php?id=PRD2009-09-0164",
+      "notes": "1本（標準42g）あたり"
+    },
+    {
+      "id": "ajinomoto-amino-vital-gold-jelly",
+      "manufacturer": "味の素株式会社",
+      "brand": "アミノバイタル",
+      "name": "アミノバイタル GOLD ゼリードリンク",
+      "category": "trailFood",
+      "unit": "pack",
+      "recommendedQuantity": 1,
+      "unitWeightGrams": 135,
+      "caloriesPerUnit": 135,
+      "status": "active",
+      "sourceUrl": "https://www.ajinomoto.co.jp/products/detail/?ProductName=aminovital_29",
+      "notes": "1袋（135g）あたり"
+    }
+  ]
 }
