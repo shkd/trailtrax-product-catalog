@@ -34,6 +34,7 @@
         "caloriesPerUnit": { "type": "number", "minimum": 0 },
         "status": { "enum": ["active", "discontinued"] },
         "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "imageUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
         "notes": { "type": "string" }
       }
     }
