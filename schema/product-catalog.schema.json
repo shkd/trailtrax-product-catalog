@@ -27,6 +27,8 @@
         "manufacturer": { "type": "string", "minLength": 1 },
         "brand": { "type": "string", "minLength": 1 },
         "name": { "type": "string", "minLength": 1 },
+        "productName": { "type": "string", "minLength": 1 },
+        "flavor": { "type": "string", "minLength": 1 },
         "category": { "enum": ["meal", "trailFood", "water", "electrolyte", "emergency", "other"] },
         "unit": { "enum": ["piece", "serving", "pack", "milliliter"] },
         "recommendedQuantity": { "type": "number", "exclusiveMinimum": 0 },
